@@ -23,10 +23,6 @@
         "value": "${region}"
       },
       {
-        "name": "ALLOWED_HOSTS",
-        "value": "${allowed_hosts}"
-      },
-      {
         "name": "DB_USER",
         "value": "${rds_username}"
       },
