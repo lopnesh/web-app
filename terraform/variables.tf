@@ -56,19 +56,15 @@ variable "instance_type" {
 }
 variable "docker_image_url_webapp" {
   description = "Docker image to run in the ECS cluster"
-  default     = "086913749727.dkr.ecr.eu-central-1.amazonaws.com/web_app:latest"
+  default     = "482720962971.dkr.ecr.eu-central-1.amazonaws.com/web_app:latest"
 }
 variable "docker_image_url_nginx" {
   description = "Docker image to run in the ECS cluster"
-  default     = "086913749727.dkr.ecr.eu-central-1.amazonaws.com/nginx:latest"
+  default     = "482720962971.dkr.ecr.eu-central-1.amazonaws.com/nginx:latest"
 }
 variable "app_count" {
   description = "Number of Docker containers to run"
   default     = 2
-}
-variable "allowed_hosts" {
-  description = "Domain name for allowed hosts"
-  default     = "lopnesh.tk"
 }
 
 
@@ -83,7 +79,7 @@ variable "log_retention_in_days" {
 
 variable "ssh_pubkey_file" {
   description = "Path to an SSH public key"
-  default     = "~/.ssh/id_rsa.pub"
+  default     = "/home/ubuntu/.ssh/id_rsa.pub"
 }
 
 
@@ -107,5 +103,5 @@ variable "autoscale_desired" {
 
 variable "certificate_arn" {
   description = "AWS Certificate Manager ARN for validated domain"
-  default     = "arn:aws:acm:eu-central-1:086913749727:certificate/25274bbe-6eb4-45b8-a048-9b30f3161ca6"
+  default     = "arn:aws:acm:eu-central-1:482720962971:certificate/e58d45e9-f79b-4de8-95d4-c47cf33836a4"
 }
