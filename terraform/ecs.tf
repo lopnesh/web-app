@@ -24,7 +24,6 @@ data "template_file" "app" {
     rds_username            = aws_secretsmanager_secret_version.user.secret_string
     rds_password            = aws_secretsmanager_secret_version.pass.secret_string
     rds_hostname            = aws_db_instance.production.address
-    allowed_hosts           = var.allowed_hosts
   }
 }
 
