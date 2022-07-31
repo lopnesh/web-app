@@ -79,7 +79,7 @@ variable "log_retention_in_days" {
 
 variable "ssh_pubkey_file" {
   description = "Path to an SSH public key"
-  default     = "/home/ubuntu/.ssh/id_rsa.pub"
+  default     = "/var/lib/jenkins/.ssh/id_rsa.pub"
 }
 
 
