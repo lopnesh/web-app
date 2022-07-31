@@ -38,6 +38,10 @@ variable "health_check_path" {
   default     = "/ping/"
 }
 
+variable "allowed_hosts"{
+  default = "ezhererbnoy.devops.dataart.com"
+}
+
 
 # ecs
 
