@@ -39,7 +39,7 @@ variable "health_check_path" {
 }
 
 variable "allowed_hosts"{
-  default = "ezhererbnoy.devops.dataart.com"
+  default = "lopnesh.tk"
 }
 
 
@@ -107,5 +107,5 @@ variable "autoscale_desired" {
 
 variable "certificate_arn" {
   description = "AWS Certificate Manager ARN for validated domain"
-  default     = "arn:aws:acm:eu-central-1:482720962971:certificate/e58d45e9-f79b-4de8-95d4-c47cf33836a4"
+  default     = "arn:aws:acm:eu-central-1:482720962971:certificate/589418d6-11ad-41e2-bd82-964a4709f6fa"
 }
